@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #fceff9;
+  font-family: 'Comic Sans MS', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.penguin {
+  width: 200px;
+  margin-bottom: 20px;
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.love-text {
+  font-size: 2.5rem;
+  color: #ff5e99;
+  margin: 10px 0;
+}
+
+.heart {
+  font-size: 3rem;
+  cursor: pointer;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.love-note {
+  font-size: 1.8rem;
+  color: #5a0b4d;
+}
